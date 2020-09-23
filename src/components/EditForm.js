@@ -45,7 +45,7 @@ export class EditForm extends Component {
           backgroundColor: "#57759b",
           width: "300px",
           height: "85vh",
-          marginLeft: "1rem",
+          marginLeft: "2rem",
           paddingLeft: "40px",
           paddingTop: "20px",
           fontSize: "15px",
