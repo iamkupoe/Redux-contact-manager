@@ -31,7 +31,7 @@ export class App extends Component {
         
 
         {/* List of contacts */}
-        <div className="contact-info" style={{float: 'right', marginRight:'15rem'}}> 
+        <div className="contact-info" style={{float: 'right', marginRight:'3rem'}}> 
          {this.props.contacts.map((item) => {
              return (
                <ContactInfo

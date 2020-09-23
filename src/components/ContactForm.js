@@ -39,7 +39,7 @@ class ContactForm extends Component {
   render() {
     return (
       <div className="text" style={{color:'white'}}>
-        <h2 className="text-success">Contact Form</h2>
+        <h2 className="text-success" style={{marginLeft:'-7rem'}}>Contact Form</h2>
         <form
           onSubmit={this.handleSubmit}
           style={{
@@ -47,7 +47,7 @@ class ContactForm extends Component {
             backgroundColor: "#57759b",
             width: "300px",
             height: "70vh",
-            marginLeft: "0",
+            marginLeft: "-11.5rem",
             paddingLeft: "40px",
             paddingTop: "20px",
             fontSize: "15px",
