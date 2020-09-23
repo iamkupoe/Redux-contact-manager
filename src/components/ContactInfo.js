@@ -18,7 +18,7 @@ const ContactInfo = ({name, email, number, id, removeContact}) => {
         Number: {number}
         </p>
         <hr className="hr"/>
-        <button className='btn' onClick={handleClick} style={{backgroundColor:'skyBlue', color:'red', borderRadius:'1rem', height: '2.5rem'}}>DELETE</button>
+        <button className='btn' onClick={handleClick} style={{backgroundColor:'#e5ecec', color:'red', borderRadius:'1rem', height: '2.5rem'}}>DELETE</button>
         <Link to={`/edit/${id}`} style={{color:'blue', marginLeft: '3rem'}}>Edit Contact </Link> 
        
       </div>

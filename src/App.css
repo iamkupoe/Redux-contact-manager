@@ -427,7 +427,7 @@ table th {
   margin-top: 2.5rem;
   margin-left: 5rem;
   width: 20rem;
-  background-color: #6cdbd6;
+  background-color: #d2f78d;
   border-radius: 10px;
   b-align: center;
 }
@@ -440,7 +440,7 @@ table th {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #708571;
   color: white;
   padding: 16px;
   font-size: 16px;

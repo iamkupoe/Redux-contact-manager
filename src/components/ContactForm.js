@@ -6,7 +6,8 @@ class ContactForm extends Component {
     this.state = {
       name: "",
       email: "",
-      number: ""
+      number: "",
+      type: "personal"
     };
   }
   handleChange = (e) => {
@@ -19,16 +20,19 @@ class ContactForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     console.log("from ContactForm", this.state)
+
     const newContact = {
       name: this.state.name,
       email: this.state.email,
-      number: this.state.number
+      number: this.state.number,
+      type: "personal"
     };
     this.props.addContact(newContact);
     this.setState({
       name: "",
       email: "",
-      number: ""
+      number: "",
+      type: "personal"
     });
   };
 
@@ -84,7 +88,7 @@ class ContactForm extends Component {
             onChange={this.handleChange}
             style={{ width: "200px", height: "30px", borderRadius: "4px" }}
           />
-          <br />
+          <br/>
           <button
             type="SUBMIT"
             style={{

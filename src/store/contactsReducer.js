@@ -6,19 +6,22 @@ const initialState = {
       id: "1",
       name: "John Bull",
       email: "johnb@gmail.com",
-      number: "0577800456"
+      number: "0577800456",
+      type: "Personal"
     },
     {
       id: "2",
       name: "Wakanda King",
       email: "zagar@gmail.com",
-      number: "0204348420"
+      number: "0204348420",
+      type: "Personal"
     },
     {
       id: "3",
       name: "Kwame Djan",
       email: "djank@yahoo.com",
-      number: "0549924751"
+      number: "0549924751",
+      type: "Business"
     }
   ]
 };
