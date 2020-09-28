@@ -1,9 +1,17 @@
 export const addContact = (contact) => {
-    return {
-        type: 'ADD_CONTACT',
-        payload: contact
-    }
-}
+    return (dispatch, state, {getFirestore}) => {
+        getFirestore()
+        .collection('contacts')
+        .add(contact)
+        .then((doc) =>  { 
+            dispatch({
+                type: 'ADD_CONTACT',
+                payload: contact,
+            });
+
+        });
+    };
+};
 
 export const deleteContact = (contact_id) => {
     return {

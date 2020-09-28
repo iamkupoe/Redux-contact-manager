@@ -1,16 +1,16 @@
 import firebase from 'firebase';
 
- // Your web app's Firebase configuration
- var firebaseConfig = {
-    apiKey: "AIzaSyC6uYbBtv08hgqctxplytP6v5gMb1rI-gk",
-    authDomain: "usersapp-d57c6.firebaseapp.com",
-    databaseURL: "https://usersapp-d57c6.firebaseio.com",
-    projectId: "usersapp-d57c6",
-    storageBucket: "usersapp-d57c6.appspot.com",
-    messagingSenderId: "316245774174",
-    appId: "1:316245774174:web:4ed022c54108a6fccdc9cf"
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAeJbTNEI5a0YTscnBvF3u1NJaYjUe6ctU",
+    authDomain: "contact-manager-4127d.firebaseapp.com",
+    databaseURL: "https://contact-manager-4127d.firebaseio.com",
+    projectId: "contact-manager-4127d",
+    storageBucket: "contact-manager-4127d.appspot.com",
+    messagingSenderId: "587839787889",
+    appId: "1:587839787889:web:f0e92359c9a80b1bafdcd0"
   };
   // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
 
 export default firebase;
