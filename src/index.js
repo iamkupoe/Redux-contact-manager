@@ -16,6 +16,7 @@ const store = createStore(contactsReducer,
   compose(
     applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore})),
     reduxFirestore(firebase),
+    
   
 ));
 

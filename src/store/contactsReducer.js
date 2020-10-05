@@ -1,29 +1,7 @@
 import { v4 as uuid } from 'uuid';
 
 const initialState = {
-  contacts: [
-    {
-      id: "1",
-      name: "John Bull",
-      email: "johnb@gmail.com",
-      number: "0577800456",
-      type: "Personal"
-    },
-    {
-      id: "2",
-      name: "Wakanda King",
-      email: "zagar@gmail.com",
-      number: "0204348420",
-      type: "Personal"
-    },
-    {
-      id: "3",
-      name: "Kwame Djan",
-      email: "djank@yahoo.com",
-      number: "0549924751",
-      type: "Business"
-    }
-  ]
+  contacts: [],  
 };
 
 const contactsReducer = (state = initialState, action) => {
@@ -48,6 +26,8 @@ const contactsReducer = (state = initialState, action) => {
         }
       });
       return {...state, contacts: updatedContactsInfo}
+      case "SET_ALL_CONTACTS":
+        return {contacts: action.payload};
     default:
       return state;
   }

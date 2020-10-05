@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
-import  { addContact } from './store/contactsActions';
+import  { addContact, getAllContacts } from './store/contactsActions';
 import { deleteContact } from './store/contactsActions';
 import ContactInfo from "./components/ContactInfo";
 import ContactForm from './components/ContactForm';
@@ -17,6 +17,10 @@ export class App extends Component {
   };
   deleteContact = contact_id => {
     this.props.deleteContact(contact_id);
+  }
+
+  componentDidMount(){
+    this.props.getAllContacts();
   }
 
   render() {
@@ -55,9 +59,10 @@ export class App extends Component {
   });
 
   const mapDispatchToProps = {
-    addContact: addContact,
-    deleteContact: deleteContact
-  }
+    addContact, 
+    deleteContact, 
+    getAllContacts 
+  } 
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
