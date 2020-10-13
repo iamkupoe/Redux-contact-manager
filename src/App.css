@@ -479,3 +479,140 @@ table th {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/*Register*/
+
+#reg {
+  color: #28a745;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+#form {
+  border: 1px solid gray;
+  width: 28rem;
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 10px 5px #333333;
+  height: 18rem;
+}
+
+#label-email {
+ display: inline-block;
+ width: 5rem;
+ text-align: left;
+ color: #28a745;
+ margin-left: 1rem;
+}
+
+
+#email {
+  background-color: white;
+  display: inline-block;
+  width: 20rem;
+  text-align: center;
+  color: red;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+
+
+#divide {
+  margin-top: 1rem;
+  width: 27rem;
+  margin-left: 0.5rem;
+}
+
+#button-end {
+ background-color: rgb(113, 137, 211);
+ width: 5rem;
+ margin-top: 0.5rem;
+ margin-left: 12rem;
+ border-radius: 0.5rem;
+ color: white;
+}
+
+#vide {
+  margin-top: 1rem;
+  width: 27rem;
+  margin-left: 0.5rem;
+}
+
+#google-button {
+  width: 5rem;
+  margin-left: 12rem;
+  margin-top: 0.5rem;
+  height: 2.8rem;
+  border-radius: 0.5rem;
+}
+
+/*Login Form*/
+
+#login {
+ color:#28a745;
+ margin-left: 4rem;
+ margin-top: 2rem;
+}
+
+.login-form {
+ background-color: rgb(196, 243, 247);
+ width: 28rem;
+ height: 20rem;
+ box-shadow: 5px 10px 5px #504e4e;
+ border-radius: 1rem;
+ margin-left: 4%;
+ padding-top: 1rem;
+}
+
+#label-login {
+ display: inline-block;
+ width: 5rem;
+ text-align: left;
+ color: #28a745;
+ margin-left: 1rem;
+}
+
+#input-login {
+background-color: lightgray;
+display: inline-block;
+width: 20rem;
+text-align: center;
+color: red;
+border: 1px solid gray;
+border-radius: 1rem;
+}
+
+#button-login {
+ background-color: rgb(113, 137, 211);
+ width: 5rem;
+ margin-left: 13rem;
+ border-radius: 0.5rem;
+ color: white;
+}
+
+#horizontal-google {
+ margin-top: 1rem;
+ width: 27rem;
+ margin-left: 0.5rem;
+}
+
+.button-google {
+ width: 5rem;
+ margin-left: 13rem;
+ margin-top: 0.5rem;
+ height: 2.8rem;
+ border-radius: 0.5rem;
+
+}
+
+/*Marquee*/
+
+#marquee {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: blue;
+}
+
+#powered {
+  margin-left: 5rem;
+}

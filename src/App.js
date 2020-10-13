@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import  { addContact, getAllContacts } from './store/contactsActions';
 import { deleteContact } from './store/contactsActions';
+import { logOutUser } from './store/authActions';
 import ContactInfo from "./components/ContactInfo";
 import ContactForm from './components/ContactForm';
 import Navbar from './components/layout/Navbar';
@@ -31,6 +32,7 @@ export class App extends Component {
       <div className="form" style={{marginLeft:'15rem', float:'left'}}>
           {/* Form to add new contact */}
         <ContactForm addContact = {this.addNewContact} />
+        <button style={{width:"15rem", color:"white",marginTop:'0.5rem', marginLeft:'-10rem', backgroundColor:'blue', borderRadius:'0.5rem'}} onClick={this.props.logOutUser}>Logout</button>
       </div>
         
 
@@ -54,14 +56,17 @@ export class App extends Component {
   }
   }
 
-  const mapStateToProps = (state) => ({
-     contacts:state.contacts
-  });
+  const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+      contacts:state.contactsState.contacts
+   };}
 
   const mapDispatchToProps = {
     addContact, 
     deleteContact, 
-    getAllContacts 
+    getAllContacts,
+    logOutUser
   } 
 
 
