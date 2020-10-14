@@ -42,12 +42,8 @@ function Login (props) {
             </button>
            
            </form>
-            <marquee id="marquee" >
-            <strong>
-             You are required to either login using your email and password or use the google sign up/login button!! Thank you!!
-            </strong>
-            </marquee>
-            <h1 id="powered" >Powered by <a href="https://samuelk.netlify.app" target="_blank">iamkupoe</a> </h1>
+      
+            <h1 id="powered" >Powered by <a href="https://samuelk.netlify.app">iamkupoe</a> </h1>
         </div>
     )
 }
