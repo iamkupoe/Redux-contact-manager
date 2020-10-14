@@ -605,14 +605,10 @@ border-radius: 1rem;
 
 }
 
-/*Marquee*/
-
-#marquee {
-  margin-top: 1rem;
-  font-size: 3rem;
-  color: blue;
-}
+/*Footer*/
 
 #powered {
   margin-left: 5rem;
+  font-family: 'Chilanka', cursive;
+  margin-top: 0.5rem;
 }
